@@ -1,6 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const puppeteer = require('puppeteer');
+const puppeteer = require('puppeteer-extra');
+const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+
+// Add stealth plugin to avoid bot detection
+puppeteer.use(StealthPlugin());
 
 let browser = null;
 
@@ -15,6 +19,8 @@ async function initBrowser() {
         '--disable-dev-shm-usage',
         '--disable-accelerated-2d-canvas',
         '--disable-gpu',
+        '--disable-blink-features=AutomationControlled',
+        '--window-size=1920,1080',
       ],
     });
   }
