@@ -1,0 +1,31 @@
+=== 🚀 Railway Configuration ===
+
+Repository: https://github.com/shayhaimgalaxys2/scraping-service
+
+=== 📋 Environment Variables (הוסף ב-Railway) ===
+
+API_KEY=93abf9615cda9bc5009f9a46928a80d7ed584faf0c525c5cd18e6102f50db244
+ALLOWED_ORIGINS=https://shopping-list-ruby-mu.vercel.app
+NODE_ENV=production
+PORT=3001
+
+=== 🎯 צעדים ב-Railway Dashboard ===
+
+1. לך ל: https://railway.app
+2. Login with GitHub
+3. New Project → Deploy from GitHub repo
+4. בחר: scraping-service
+5. כשהשירות נוצר, לחץ עליו
+6. לשונית "Variables"
+7. העתק והדבק את ה-Variables מלמעלה
+8. Settings → Networking → Generate Domain
+9. העתק את ה-URL
+10. תגיד לי: "סיימתי! URL: ___"
+
+=== ⚠️ חשוב! ===
+
+שמור את ה-API_KEY הזה - תצטרך אותו גם ל-Vercel!
+
+=== 🆘 בעיות? ===
+
+אם משהו לא עובד, תראה לי screenshot או תגיד לי איפה אתה תקוע.
